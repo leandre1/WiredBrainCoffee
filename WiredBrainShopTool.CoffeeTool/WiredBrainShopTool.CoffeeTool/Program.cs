@@ -16,7 +16,10 @@ namespace WiredBrainShopTool.CoffeeTool
             bool valid = true;
             while (valid)
             {
-               
+               if(string.Equals("quit",line,StringComparison.OrdinalIgnoreCase))
+                {
+                    break;
+                }
 
                 if (string.Equals("help",line, StringComparison.OrdinalIgnoreCase))
                 {
